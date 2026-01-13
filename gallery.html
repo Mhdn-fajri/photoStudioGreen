@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Green Studio Gallery - Koleksi hasil foto profesional kami">
+    <title>Galeri - Green Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <svg class="logo-icon" width="40" height="40" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" stroke="#2E7D32" stroke-width="6" fill="none" />
+                    <circle cx="50" cy="50" r="30" stroke="#2E7D32" stroke-width="4" fill="none" />
+                    <circle cx="50" cy="50" r="15" fill="#2E7D32" />
+                    <ellipse cx="50" cy="12" rx="8" ry="12" fill="#4CAF50" />
+                </svg>
+                <span class="brand-text">Green Studio</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#packages">Paket</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Kontak</a></li>
+                </ul>
+                <a href="https://wa.me/<#>" class="btn btn-primary-custom ms-lg-3" target="_blank">
+                    <i class="fab fa-whatsapp me-2"></i>Hubungi Kami
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Hero -->
+    <section class="gallery-hero">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up">
+                <span class="section-badge"><i class="fas fa-images me-2"></i>Koleksi Kami</span>
+                <h1 class="gallery-title">Galeri <span class="gradient-text">Foto</span></h1>
+                <p class="gallery-subtitle">Lihat hasil karya terbaik kami dari berbagai sesi foto</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="gallery-filter-section">
+        <div class="container">
+            <div class="filter-buttons" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="portrait">Portrait</button>
+                <button class="filter-btn" data-filter="family">Keluarga</button>
+                <button class="filter-btn" data-filter="couple">Couple</button>
+                <button class="filter-btn" data-filter="graduation">Wisuda</button>
+                <button class="filter-btn" data-filter="kids">Anak & Bayi</button>
+                <button class="filter-btn" data-filter="professional">Profesional</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-main section-padding">
+        <div class="container">
+            <div class="gallery-masonry" id="galleryGrid">
+                <!-- Portrait Photos -->
+                <div class="gallery-photo" data-category="portrait" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&h=800&fit=crop"
+                        alt="Portrait Photo 1">
+                    <div class="photo-overlay">
+                        <div class="photo-info">
+                            <h4>Portrait Elegan</h4>
+                            <span>Portrait Session</span>
+                        </div>
+                        <button class="photo-zoom" onclick="openLightbox(this)"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-photo" data-category="portrait" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=800&fit=crop"
+                        alt="Portrait Photo 2">
+                    <div class="photo-overlay">
+                        <div class="photo-info">
+                            <h4>Portrait Pria</h4>
+                            <span>Portrait Session</span>
+                        </div>
+                        <button class="photo-zoom" onclick="openLightbox(this)"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-photo" data-category="portrait" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&h=800&fit=crop"
+                        alt="Portrait Photo 3">
+                    <div class="photo-overlay">
+                        <div class="photo-info">
+                            <h4>Beauty Portrait</h4>
+                            <span>Portrait Session</span>
+                        </div>
+                        <button class="photo-zoom" onclick="openLightbox(this)"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+
+                <!-- Family Photos -->
+                <div class="gallery-photo gallery-photo-wide" data-category="family" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1609220136736-443140cffec6?w=1200&h=800&fit=crop"
+                        alt="Family Photo 1">
+                    <div class="photo-overlay">
+                        <div class="photo-info">
+                            <h4>Keluarga Bahagia</h4>
+                            <span>Family Session</span>
+                        </div>
+                        <button class="photo-zoom" onclick="openLightbox(this)"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-photo" data-category="family" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?w=600&h=800&fit=crop"
+                        alt="Family Photo 2">
+                    <div class="photo-overlay">
+                        <div class="photo-info">
+                            <h4>Momen Keluarga</h4>
+                            <span>Family Session</span>
+                        </div>
+                        <button class="photo-zoom" onclick="openLightbox(this)"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-photo" data-category="family" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1606567595334-d39972c85dfd?w=600&h=800&fit=crop"
+                        alt="Family Photo 3">
+                    <div class="photo-overlay">
+                        <div class="photo-info">
+                            <h4>Family Portrait</h4>
+                            <span>Family Session</span>
+                        </div>
+                        <button class="photo-zoom" onclick="openLightbox(this)"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+
+                <!-- Couple Photos -->
+                <div class="gallery-photo" data-category="couple" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&h=800&fit=crop"
+                        alt="Couple Photo 1">
+                    <div class="photo-overlay">
+                        <div class="photo-info">
+                            <h4>Pre-Wedding</h4>
+                            <span>Couple Session</span>
+                        </div>
+                        <button class="photo-zoom" onclick="openLightbox(this)"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-photo gallery-photo-wide" data-category="couple" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1529634597503-139d3726fed5?w=1200&h=800&fit=crop"
+                        alt="Couple Photo 2">
+                    <div class="photo-overlay">
+                        <div class="photo-info">
+                            <h4>Romantic Moment</h4>
+                            <span>Couple Session</span>
+                        </div>
+                        <button class="photo-zoom" onclick="openLightbox(this)"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-photo" data-category="couple" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=600&h=800&fit=crop"
+                        alt="Couple Photo 3">
+                    <div class="photo-overlay">
+                        <div class="photo-info">
+                            <h4>Love Story</h4>
+                            <span>Couple Session</span>
+                        </div>
+                        <button class="photo-zoom" onclick="openLightbox(this)"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+
+                <!-- Graduation Photos -->
+                <div class="gallery-photo" data-category="graduation" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=800&fit=crop"
+                        alt="Graduation Photo 1">
+                    <div class="photo-overlay">
+                        <div class="photo-info">
+                            <h4>Wisuda S1</h4>
+                            <span>Graduation Session</span>
+                        </div>
+                        <button class="photo-zoom" onclick="openLightbox(this)"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-photo" data-category="graduation" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1627556704302-624286467c65?w=600&h=800&fit=crop"
+                        alt="Graduation Photo 2">
+                    <div class="photo-overlay">
+                        <div class="photo-info">
+                            <h4>Toga Portrait</h4>
+                            <span>Graduation Session</span>
+                        </div>
+                        <button class="photo-zoom" onclick="openLightbox(this)"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-photo gallery-photo-wide" data-category="graduation" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1200&h=800&fit=crop"
+                        alt="Graduation Photo 3">
+                    <div class="photo-overlay">
+                        <div class="photo-info">
+                            <h4>Wisuda Bersama</h4>
+                            <span>Graduation Session</span>
+                        </div>
+                        <button class="photo-zoom" onclick="openLightbox(this)"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+
+                <!-- Kids Photos -->
+                <div class="gallery-photo" data-category="kids" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600&h=800&fit=crop"
+                        alt="Kids Photo 1">
+                    <div class="photo-overlay">
+                        <div class="photo-info">
+                            <h4>Si Kecil Lucu</h4>
+                            <span>Kids Session</span>
+                        </div>
+                        <button class="photo-zoom" onclick="openLightbox(this)"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-photo" data-category="kids" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1519457431-44ccd64a579b?w=600&h=800&fit=crop"
+                        alt="Kids Photo 2">
+                    <div class="photo-overlay">
+                        <div class="photo-info">
+                            <h4>Baby Portrait</h4>
+                            <span>Baby Session</span>
+                        </div>
+                        <button class="photo-zoom" onclick="openLightbox(this)"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-photo" data-category="kids" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1596870230751-ebdfce98ec42?w=600&h=800&fit=crop"
+                        alt="Kids Photo 3">
+                    <div class="photo-overlay">
+                        <div class="photo-info">
+                            <h4>Anak Ceria</h4>
+                            <span>Kids Session</span>
+                        </div>
+                        <button class="photo-zoom" onclick="openLightbox(this)"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+
+                <!-- Professional Photos -->
+                <div class="gallery-photo" data-category="professional" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&h=800&fit=crop"
+                        alt="Professional Photo 1">
+                    <div class="photo-overlay">
+                        <div class="photo-info">
+                            <h4>Corporate Portrait</h4>
+                            <span>Professional Session</span>
+                        </div>
+                        <button class="photo-zoom" onclick="openLightbox(this)"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-photo" data-category="professional" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=800&fit=crop"
+                        alt="Professional Photo 2">
+                    <div class="photo-overlay">
+                        <div class="photo-info">
+                            <h4>Business Woman</h4>
+                            <span>Professional Session</span>
+                        </div>
+                        <button class="photo-zoom" onclick="openLightbox(this)"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-photo gallery-photo-wide" data-category="professional" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&h=800&fit=crop"
+                        alt="Professional Photo 3">
+                    <div class="photo-overlay">
+                        <div class="photo-info">
+                            <h4>Team Photo</h4>
+                            <span>Corporate Session</span>
+                        </div>
+                        <button class="photo-zoom" onclick="openLightbox(this)"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="gallery-cta section-padding">
+        <div class="container">
+            <div class="cta-content text-center" data-aos="fade-up">
+                <h2>Ingin Hasil Foto Seperti Ini?</h2>
+                <p>Booking sesi foto Anda sekarang dan dapatkan pengalaman foto terbaik</p>
+                <div class="cta-buttons">
+                    <a href="index.html#packages" class="btn btn-primary-custom btn-lg">
+                        <i class="fas fa-box-open me-2"></i>Lihat Paket
+                    </a>
+                    <a href="https://wa.me/<#>?text=Halo Green Studio, saya tertarik untuk booking sesi foto"
+                        class="btn btn-outline-light btn-lg" target="_blank">
+                        <i class="fab fa-whatsapp me-2"></i>Chat WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <div class="footer-brand">
+                        <svg class="logo-icon" width="40" height="40" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" stroke="white" stroke-width="6" fill="none" />
+                            <circle cx="50" cy="50" r="30" stroke="white" stroke-width="4" fill="none" />
+                            <circle cx="50" cy="50" r="15" fill="white" />
+                            <ellipse cx="50" cy="12" rx="8" ry="12" fill="#81C784" />
+                        </svg>
+                        <span class="brand-text">Green Studio</span>
+                    </div>
+                    <p class="footer-desc">Studio foto profesional dengan peralatan modern untuk hasil foto berkualitas
+                        tinggi.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/<#>" class="social-link" target="_blank"><i
+                                class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Link Cepat</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="index.html#about">Tentang</a></li>
+                        <li><a href="index.html#services">Layanan</a></li>
+                        <li><a href="index.html#packages">Paket</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Layanan</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html#packages">Self Photo</a></li>
+                        <li><a href="index.html#packages">Foto Keluarga</a></li>
+                        <li><a href="index.html#packages">Foto Couple</a></li>
+                        <li><a href="index.html#packages">Foto Wisuda</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Kontak</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fab fa-whatsapp"></i><a href="https://wa.me/<#>" target="_blank">WhatsApp Kami</a>
+                        </li>
+                        <li><i class="fas fa-map-marker-alt"></i><span>Jl. Contoh Alamat No. 123</span></li>
+                        <li><i class="fas fa-clock"></i><span>09:00 - 21:00</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Green Studio. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <button class="lightbox-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+        <button class="lightbox-prev" onclick="prevImage()"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-next" onclick="nextImage()"><i class="fas fa-chevron-right"></i></button>
+        <div class="lightbox-content">
+            <img src="" alt="Gallery Image" id="lightboxImage">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/<#>?text=Halo Green Studio" class="whatsapp-float" target="_blank"><i
+            class="fab fa-whatsapp"></i></a>
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+
+</html>
